@@ -310,6 +310,18 @@ console.log("evenStevens100:", evenStevens(100))
 */ 
 
 
+function daClub(cover,age){
+	if (cover>21 && age>21){
+		return "wecome to the legends lounge"
+	}else{
+		return "chuck e cheese across the street"
+	}
+}
+
+console.log("daclub22,23:",daClub(22,23))
+console.log("daclub10,23:",daClub(10,23))
+
+
 /*
  * #12
  * Function - graduation
@@ -323,7 +335,17 @@ console.log("evenStevens100:", evenStevens(100))
  * Console.log your result.
 */ 
 
+function graduation(credits,thesis){
+	if (credits>=120 || thesis>=120){
+		return "congrats on a job well done"
+	}else{
+		return "see you in summer school"
+	}
+}
 
+console.log("graduationsuccess", graduation(120,120))
+console.log("graduationsuccess2", graduation(10,130))
+console.log("graduationfail", graduation(100,100))
 
 /*
  * #13
@@ -337,6 +359,20 @@ console.log("evenStevens100:", evenStevens(100))
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+	if (speed<50){
+		return "you are riding honolulu rail";
+	}else if (speed<100){
+		return "you are riding amtrak";
+	}else if (speed>=100){
+		return "now you ballin' in the shinkansen"
+	}
+}
+
+console.log("hnl rail: ",moneyTrain(10))
+console.log("amtrak: ",moneyTrain(90))
+console.log("shinkansen1: ",moneyTrain(100))
+console.log("shinkansen2: ",moneyTrain(150))
 
 /*
  * #14
@@ -352,8 +388,18 @@ console.log("evenStevens100:", evenStevens(100))
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 100
+var doughnutPrice = 50
+var doughnutBought = 0
 
+function buyDoughnut(){
+	budget -= doughnutPrice;
+	doughnutBought++
+}
 
+console.log(budget, doughnutBought)
+console.log(buyDoughnut())
+console.log(budget, doughnutBought)
 
 
 /*
@@ -384,11 +430,26 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
 
 
+for(var i = 1; i<=5; i++){
+  console.log("player ", i);
+}
+
+for(var z = 2; z<=5; z++){
+  console.log("playa",z, "is awesome");
+}
+
+
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+
+for (var i = 0; i<myFavFoods.length; i++){
+	console.log(myFavFoods[i])
+}
+
+//so with the i in brackets, you are telling it to print that item number out of the array. each time it runs through the loop the variable "i" has 1 added to it, so when it goes through console.log again, it will print the 2nd, 3rd, etc. item in the list. 
 
 
 /*

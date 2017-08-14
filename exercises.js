@@ -103,6 +103,31 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if (boo === true){
+		return "true"
+	}else{
+		return "false"
+	}
+}
+
+var thishastobetrue = mustBeTrue(true)
+console.log("mustbetrueA", thishastobetrue)
+
+var thisisfalse = mustBeTrue(false)
+console.log("mustbetrueB", thisisfalse)
+
+function mustBeTrue2(x,y){
+	if (x===y){
+		return "true"
+	}else{
+		return "false"
+	}
+}
+
+console.log("mustbetrue10,10", mustBeTrue2(10,10))
+console.log("mustbetrue10,9", mustBeTrue2(10,9))
+
 
 /*
  * #5
@@ -116,6 +141,27 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */
 
+function bigBird(word){
+	if (word.length = 3){
+		return "word to big bird";
+	}else{
+		return "false"
+	}
+}
+
+console.log(bigBird("hawaii"))
+
+
+function bigBird2(word){
+	if (word.length === 3){
+		return "word to big bird";
+	}else{
+		return "false big bird"
+	}
+}
+
+console.log(bigBird2("hawaii"))
+console.log(bigBird2("hey"))
 
 
 /*
@@ -131,6 +177,16 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */
 
+function isEqual(first,second){
+	if(first===second){
+		return "you look mahvelous"
+	}else{
+		return "i don't who you are anymore"
+	}
+}
+
+console.log(isEqual("renee","renee"))
+console.log(isEqual("rene","renee"))
 
 /*
  * #7
@@ -145,6 +201,17 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */
 
+function notEqual(first,second){
+	if(first!==second){
+		return "opposites attract"
+	}else{
+		return "cause its like you're my mirror"
+	}
+}
+
+console.log(notEqual("night","day"))
+console.log(notEqual("day","day"))
+
 
 /*
  * #8
@@ -157,6 +224,20 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+
+
+
+
+function spareChange(money){
+	if(money>100){
+		return "true"
+	}else{
+		return "false"
+	}
+}
+
+console.log("150true:", spareChange(150));
+console.log("90false:", spareChange(90))
 
 
 
@@ -174,6 +255,16 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */ 
 
+function dirty30 (one,two,three){
+	if ((one + two + three)>30){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+console.log("dirty30:",dirty30(5,5,5))
+console.log("dirty30:",dirty30(10,10,15))
 
 
 /*
@@ -188,8 +279,22 @@ console.log("isgreaterthanb:", isGreaterThan(1,2))
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	if(num%2===0){
+		return true;
+		if(num===0){
+			return true
+		}
+	}else{
+		return false;
+	}
+}
 
-
+console.log("evenStevens3:", evenStevens(3))
+console.log("evenStevens2:", evenStevens(2))
+console.log("evenStevens10:", evenStevens(10))
+console.log("evenStevens0:", evenStevens(0))
+console.log("evenStevens100:", evenStevens(100))
 
 /*
  * #11
